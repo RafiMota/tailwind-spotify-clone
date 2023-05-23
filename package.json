@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "name": "tailwind-spotify-clone",
+  "description": "A spotify SPA made using Tailwind CSS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss build -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
