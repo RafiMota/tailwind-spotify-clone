@@ -1,18 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tailfy</title>
-		<link rel="stylesheet" href="src/css/output.css" />
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailfy</title>
+        <link rel="stylesheet" href="src/css/output.css" />
+    </head>
 
-	<body>
-		<div
-			class="container m-4 mx-auto border-4 border-red-300 bg-green-300 p-4 font-mono text-2xl text-blue-50 md:bg-blue-300"
-		>
-			<p>O texto do container</p>
+    <body>
+        <main
+            class="flex h-full flex-col gap-10 bg-gradient-to-r from-cyan-700 to-blue-700 p-4 font-mono text-blue-50 md:flex-row"
+        >
+            <h1 class="text-center text-4xl font-bold">Calculadorazinha</h1>
+
+            <form action="" class="flex w-full flex-col gap-4">
+                <div>
+                    <label for="number1" class="text-lg opacity-80"
+                        >Primeiro número</label
+                    >
+                    <input
+                        id="number1"
+                        type="number"
+                        class="h-12 w-full rounded-md border-2 border-blue-400 bg-blue-50 p-4 text-slate-700"
+                    />
+                </div>
+                <div>
+                    <label for="nubmer2" class="text-lg opacity-80"
+                        >Segundo número</label
+                    >
+                    <input
+                        id="number2"
+                        type="number"
+                        class="h-12 w-full rounded-md border-2 border-blue-400 bg-blue-50 p-4 text-slate-700"
+                    />
+                </div>
+            </form>
+
+            <div
+                class="flex h-20 w-1/2 self-center justify-center items-center rounded-md bg-blue-50 border-blue-400 border-2"
+				onclick="myFunction()"
+            >
+			<p id="result" class="text-slate-700"></p>
 		</div>
-	</body>
+        </main>
+
+        <script src="src/main.js"></script>
+    </body>
 </html>
