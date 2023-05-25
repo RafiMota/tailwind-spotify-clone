@@ -6,7 +6,10 @@
   "description": "A spotify SPA made using Tailwind CSS",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss build -i ./src/css/input.css -o ./src/css/output.css --watch"
